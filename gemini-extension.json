@@ -1,0 +1,26 @@
+{
+  "name": "makehybrid",
+  "version": "1.0.0",
+  "description": "A MakeHybrid account as tools: LinkedIn, the messaging channels and the work trackers.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "makehybrid": {
+      "command": "npx",
+      "args": ["-y", "makehybrid-mcp@latest"]
+    }
+  },
+  "settings": [
+    {
+      "name": "MakeHybrid API key",
+      "description": "The key from your MakeHybrid dashboard. It is stored in your system keychain, never in this file.",
+      "envVar": "MAKEHYBRID_API_KEY",
+      "sensitive": true
+    },
+    {
+      "name": "MakeHybrid address",
+      "description": "Leave empty unless your provider gave you an address of its own. White-label customers put theirs here.",
+      "envVar": "MAKEHYBRID_BASE_URL",
+      "sensitive": false
+    }
+  ]
+}
